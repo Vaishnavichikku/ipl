@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Login</title>
+    <script>
+        function login()
+        {
+            var x = document.forms["log"]["name"].value;
+            var y = document.forms["log"]["pass"].value;
+            if(x=="cse" && y=="4035")
+            {
+                window.alert("Login successful");
+            }
+        }
+    </script>
+</head>
+<body style="margin-top:20%">
+    <center>
+    <div>
+        <form name="log">
+            <label>Username :</label>
+            <input type="text" name="name" required><br><br>
+            <label>Password :</label>
+            <input type="password" name="pass" required><br><br>
+            <button type ="button" onclick="login()">Login</button>
+        </form>
+    </div>
+</center>
+  
+    
+</body>
+</html>

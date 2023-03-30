@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <script>
+        function register()
+        {
+            var name=document.forms["reg"]["name"].value;
+            var mobile=document.forms["reg"]["mobile"].value;
+            var pass=document.forms["reg"]["pass"].value;
+            var rpass=document.forms["reg"]["rpass"].value;
+            
+            if(name.indexof(" ")>0)
+                window.alert("Name must contain spaces");
+            if(mobile.length<10)
+                window.alert("Please enter a valid mobile number ");
+            if(pass.length<6)
+                window.alert("Password must be atleast 6 characters");
+            if(pass!=rpass)
+                window.alert("Password and Re-enter password must be equal");
+            
+        }
+    </script>
+</head>
+<body style="margin-top: 20%;">
+    <center>
+    <div>
+        <form name="reg">
+            <label>Name :</label>
+            <input type="text" name="name" required><br><br>
+            <label>mobile :</label>
+            <input type="text" name="mobile" ><br><br>
+            <label>Password :</label>
+            <input type="password" name="pass" required><br><br>
+            <label>Re-enter Password :</label>
+            <input type="password" name="rpass" required><br><br>
+            <button type ="button" onclick="register()">Login</button>
+        </form>
+    </div>
+</center>
+</body>
+</html>
