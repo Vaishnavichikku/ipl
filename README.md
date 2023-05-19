@@ -7,7 +7,7 @@
     <a href="exp7/basic.html">EX7</a>
     <a href="exp8/basic.html">EX8</a>
     <a href="exp9/basic.html">EX9</a>
-    <a href="exp10">EX10</a>
+    <a href="exp10/reg.html">EX10</a>
   </body>
   </html>
   
